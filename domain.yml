@@ -1,0 +1,25 @@
+actions:
+- action_weather
+- utter_ask_location
+- utter_goodbye
+- utter_greet
+entities:
+- location
+intents:
+- greet
+- inform
+- goodbye
+responses:
+  utter_ask_location:
+  - text: In what location?
+  utter_goodbye:
+  - text: Talk to you later.
+  - text: Bye bye :(
+  utter_greet:
+  - text: Hello! How can I help?
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 0
+slots:
+  location:
+    type: text
